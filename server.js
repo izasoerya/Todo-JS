@@ -1,7 +1,7 @@
 const express = require(`express`);
 const app = express();
 
-const router = require("./route");
+const router = require("./router/route");
 
 app.use(express.static(`views`), router);
 app.get("/", function (_, res) {
