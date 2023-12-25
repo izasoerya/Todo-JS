@@ -1,6 +1,8 @@
-const express = require("express");
-
-function createTodo(req, res, next) {}
+function createTodo(req, res, next) {
+  const { title } = req.body;
+  console.log(title);
+  res.json({ message: `Input processed successfully: ${title}.` });
+}
 
 function editTodo(req, res, next) {}
 
