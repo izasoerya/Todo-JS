@@ -22,6 +22,7 @@ function fetchRequest(buttons) {
   })
     .then((response) => response.json())
     .then((data) => {
+      document.querySelector(".message").textContent = data.message;
       console.log(data);
     })
     .catch((error) => {

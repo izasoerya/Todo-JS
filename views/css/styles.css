@@ -23,6 +23,15 @@ body {
   margin-bottom: 1%;
 }
 
+.message {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  padding: 0.5%;
+  margin-top: 0.5%;
+  margin-bottom: 1%;
+}
+
 .input-user {
   padding: 5px 12px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
