@@ -9,7 +9,7 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, `index.html`));
 });
 
-const port = 3000;
-app.listen(port, () => {
-  console.log(`listening on port ${port}`);
+require("dotenv").config();
+app.listen(process.env.PORT, () => {
+  console.log(`listening on port ${process.env.PORT}`);
 });
