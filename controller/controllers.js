@@ -6,7 +6,8 @@ function createTodo(req, res, next) {
 
 function editTodo(req, res, next) {}
 
-module.exports = {
+const todoModule = {
   createTodo,
   editTodo,
 };
+module.exports = { todoModule };
