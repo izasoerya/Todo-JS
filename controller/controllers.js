@@ -5,7 +5,7 @@ function createTodo(req, res, next) {
   const { title } = req.body;
   const newTodo = new dataTodo.TodoProperties(title);
   todoList.addTodo(newTodo);
-  console.log(todoList.getTodo());
+  res.json({ title: newTodo.title });
 }
 
 function editTodo(req, res, next) {}
